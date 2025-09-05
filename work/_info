@@ -1,0 +1,264 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/questasim64_2021.1/examples
+T_opt
+Z0 !s110 1754845190
+VF9BzkBBLZM7]W31R9FZCL2
+04 10 4 work dsp48a1_tb fast 0
+=1-ac91a11d2b35-6898d006-20c-4304
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vbmux
+R0
+!i10b 1
+!s100 ?<UAE=Y=9HZhdVo56bN[N1
+INIESRQHd92BB9@WZD[CED1
+Z2 dE:/Projects/Verilog/Projects/Spartan6_DSP48A1
+w1754258341
+8bmux.v
+Fbmux.v
+!i122 0
+L0 1 13
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z5 !s108 1754845189.000000
+Z6 !s107 testbench.v|bmux.v|carrycasecade.v|multiplier.v|mux_reg_async.v|mux_reg_sync.v|mux_reg.v|mux4x1.v|post_adder.v|pre_adder.v|maindsp48a1.v|
+Z7 !s90 -reportprogress|300|maindsp48a1.v|pre_adder.v|post_adder.v|mux4x1.v|mux_reg.v|mux_reg_sync.v|mux_reg_async.v|multiplier.v|carrycasecade.v|bmux.v|testbench.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcarrycasecade
+R0
+!i10b 1
+!s100 :nC9MKl8>YiW6SD5X5PYT1
+I@n92_k3QE7RG`_2`N1We52
+R2
+w1754258377
+8carrycasecade.v
+Fcarrycasecade.v
+!i122 0
+L0 1 10
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vdsp48a1_tb
+R0
+!i10b 1
+!s100 R_TjO^Db9b?XTmnVakUok3
+I^0<<GXUL?73`MmZAz1dZY1
+R2
+w1754257316
+8testbench.v
+Ftestbench.v
+!i122 0
+L0 1 260
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vmaindsp48a1
+R0
+!i10b 1
+!s100 a`@ijIU9Z=a]nlE]1igWz2
+Ic93KCIe1OcX_C`ngQWo:82
+R2
+w1754260798
+8maindsp48a1.v
+Fmaindsp48a1.v
+!i122 0
+L0 1 168
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vmultiplier
+R0
+!i10b 1
+!s100 2BP19Q`S_7__l_lUR@ZUd0
+I;92B3W;L@;I_F<jdO60621
+R2
+w1754261209
+8multiplier.v
+Fmultiplier.v
+!i122 0
+L0 1 12
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vmux4x1
+R0
+!i10b 1
+!s100 dH8alTZZdIO:BPDDf^GB>0
+I3AT6VJE359XQ=RZ3TB`B=1
+R2
+w1754255522
+8mux4x1.v
+Fmux4x1.v
+!i122 0
+Z9 L0 1 14
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vmux_reg_async
+R0
+!i10b 1
+!s100 A1?;J9ScPO6@GUeF:mP_`3
+I`IWXl__VVT`M@OVX9i]z[1
+R2
+w1754254749
+8mux_reg_async.v
+Fmux_reg_async.v
+!i122 0
+L0 2 25
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vmux_reg_operation
+R0
+!i10b 1
+!s100 QFIVH]f_dL7H5Qhf^MKk>0
+I@Oeg2b9`bSfLQ2h7JI85S0
+R2
+w1754243312
+8mux_reg.v
+Fmux_reg.v
+!i122 0
+L0 1 24
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vmux_reg_sync
+R0
+!i10b 1
+!s100 AZzNPUN35_`7ZokjL400C1
+IdBg4gX]Dc]T]D:[dQQ:nV0
+R2
+w1754258252
+8mux_reg_sync.v
+Fmux_reg_sync.v
+!i122 0
+L0 1 26
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vpost_adder
+R0
+!i10b 1
+!s100 @NC[0cgUVOWg:]O<iz2d;0
+IYkBJF8^GIbU23=GI<R@`H2
+R2
+w1754255345
+8post_adder.v
+Fpost_adder.v
+!i122 0
+R9
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vpre_adder
+R0
+!i10b 1
+!s100 @;E]E08Sd@_cALjoLhlKC2
+I=oMnV;ke@d]MHP?DKb6nT2
+R2
+w1754258185
+8pre_adder.v
+Fpre_adder.v
+!i122 0
+R9
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1

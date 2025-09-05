@@ -1,0 +1,512 @@
+
+*** Running vivado
+    with args -log maindsp48a1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source maindsp48a1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source maindsp48a1.tcl -notrace
+Command: synth_design -top maindsp48a1 -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23488 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 409.621 ; gain = 96.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'maindsp48a1' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/maindsp48a1.v:1]
+	Parameter width1 bound to: 18 - type: integer 
+	Parameter width2 bound to: 48 - type: integer 
+	Parameter width3 bound to: 8 - type: integer 
+	Parameter width4 bound to: 36 - type: integer 
+	Parameter width5 bound to: 1 - type: integer 
+	Parameter A0REG bound to: 0 - type: integer 
+	Parameter A1REG bound to: 1 - type: integer 
+	Parameter B0REG bound to: 0 - type: integer 
+	Parameter B1REG bound to: 1 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 1 - type: integer 
+	Parameter DREG bound to: 1 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYOUTREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter CARRYINSEL bound to: OPMODE5 - type: string 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_operation' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+	Parameter widthi bound to: 8 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_sync' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+	Parameter widthi bound to: 8 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_sync' (1#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_operation' (2#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bmux' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/bmux.v:1]
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter width bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bmux' (3#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/bmux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_operation__parameterized0' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+	Parameter widthi bound to: 18 - type: integer 
+	Parameter REG_STATE bound to: 0 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_sync__parameterized0' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+	Parameter widthi bound to: 18 - type: integer 
+	Parameter REG_STATE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_sync__parameterized0' (3#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_operation__parameterized0' (3#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_operation__parameterized1' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+	Parameter widthi bound to: 18 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_sync__parameterized1' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+	Parameter widthi bound to: 18 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_sync__parameterized1' (3#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_operation__parameterized1' (3#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pre_adder' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/pre_adder.v:1]
+	Parameter with bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pre_adder' (4#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/pre_adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_operation__parameterized2' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+	Parameter widthi bound to: 48 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_sync__parameterized2' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+	Parameter widthi bound to: 48 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_sync__parameterized2' (4#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_operation__parameterized2' (4#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/multiplier.v:1]
+	Parameter with1 bound to: 18 - type: integer 
+	Parameter widthmul bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (5#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/multiplier.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_operation__parameterized3' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+	Parameter widthi bound to: 36 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_sync__parameterized3' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+	Parameter widthi bound to: 36 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_sync__parameterized3' (5#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_operation__parameterized3' (5#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux4x1' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux4x1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x1' (6#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux4x1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'carrycasecade' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/carrycasecade.v:1]
+	Parameter CARRYINSEL bound to: OPMODE5 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'carrycasecade' (7#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/carrycasecade.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_operation__parameterized4' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+	Parameter widthi bound to: 1 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'mux_reg_sync__parameterized4' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+	Parameter widthi bound to: 1 - type: integer 
+	Parameter REG_STATE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_sync__parameterized4' (7#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_reg_operation__parameterized4' (7#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/mux_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'post_adder' [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/post_adder.v:1]
+	Parameter width bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'post_adder' (8#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/post_adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindsp48a1' (9#1) [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/maindsp48a1.v:1]
+WARNING: [Synth 8-3331] design carrycasecade has unconnected port cin
+WARNING: [Synth 8-3331] design mux_reg_sync__parameterized0 has unconnected port clk
+WARNING: [Synth 8-3331] design mux_reg_sync__parameterized0 has unconnected port cei
+WARNING: [Synth 8-3331] design mux_reg_sync__parameterized0 has unconnected port rst
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[17]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[16]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[15]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[14]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[13]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[12]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[11]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[10]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[9]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[8]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[7]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[6]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[5]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[4]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[3]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[2]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[1]
+WARNING: [Synth 8-3331] design bmux has unconnected port in1[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 464.324 ; gain = 150.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 464.324 ; gain = 150.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 464.324 ; gain = 150.863
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Rami/Desktop/Constraints_basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Rami/Desktop/Constraints_basys3.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Rami/Desktop/Constraints_basys3.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Rami/Desktop/Constraints_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Rami/Desktop/Constraints_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/maindsp48a1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/maindsp48a1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 815.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 815.477 ; gain = 502.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 815.477 ; gain = 502.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 815.477 ; gain = 502.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/pre_adder.v:12]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Projects/Verilog/Projects/Spartan6_DSP48A1/post_adder.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 815.477 ; gain = 502.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               36 Bit    Registers := 1     
+	               18 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 3     
+	   4 Input     48 Bit        Muxes := 2     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mux_reg_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module mux_reg_sync__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+Module pre_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+Module mux_reg_sync__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+Module multiplier 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 1     
+Module mux_reg_sync__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module mux4x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     48 Bit        Muxes := 1     
+Module mux_reg_sync__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module post_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP m0reg/mux_reg_18bits/out_mux_reg_reg, operation Mode is: (C or 0)+(A2*B2 or 0).
+DSP Report: register b1reg/mux_reg_18bits/out_mux_reg_reg is absorbed into DSP m0reg/mux_reg_18bits/out_mux_reg_reg.
+DSP Report: register a1reg/mux_reg_18bits/out_mux_reg_reg is absorbed into DSP m0reg/mux_reg_18bits/out_mux_reg_reg.
+DSP Report: register m0reg/mux_reg_18bits/out_mux_reg_reg is absorbed into DSP m0reg/mux_reg_18bits/out_mux_reg_reg.
+DSP Report: operator multip/out is absorbed into DSP m0reg/mux_reg_18bits/out_mux_reg_reg.
+DSP Report: operator multip/out is absorbed into DSP m0reg/mux_reg_18bits/out_mux_reg_reg.
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[17]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[16]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[15]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[14]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[13]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[12]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[11]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[10]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[9]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[8]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[7]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[6]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[5]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[4]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[3]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[2]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[1]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port BCIN[0]
+WARNING: [Synth 8-3331] design maindsp48a1 has unconnected port CARRYIN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 815.477 ; gain = 502.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|maindsp48a1 | (C or 0)+(A2*B2 or 0) | 18     | 17     | 35     | -      | 36     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 852.035 ; gain = 538.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 902.512 ; gain = 589.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 903.523 ; gain = 590.062
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 903.523 ; gain = 590.062
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 903.523 ; gain = 590.062
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 903.523 ; gain = 590.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 903.523 ; gain = 590.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 903.523 ; gain = 590.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 903.523 ; gain = 590.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    31|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     1|
+|5     |LUT2    |   167|
+|6     |LUT3    |    18|
+|7     |LUT4    |    76|
+|8     |LUT5    |   145|
+|9     |LUT6    |    37|
+|10    |FDRE    |   160|
+|11    |IBUF    |   175|
+|12    |OBUF    |   152|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------------+------------------------------------+------+
+|      |Instance           |Module                              |Cells |
++------+-------------------+------------------------------------+------+
+|1     |top                |                                    |   964|
+|2     |  CYO              |mux_reg_operation__parameterized4   |     2|
+|3     |    mux_reg_18bits |mux_reg_sync__parameterized4_7      |     2|
+|4     |  a1reg            |mux_reg_operation__parameterized1   |    37|
+|5     |    mux_reg_18bits |mux_reg_sync__parameterized1_6      |    37|
+|6     |  b1reg            |mux_reg_operation__parameterized1_0 |    37|
+|7     |    mux_reg_18bits |mux_reg_sync__parameterized1_5      |    37|
+|8     |  c0reg            |mux_reg_operation__parameterized2   |    97|
+|9     |    mux_reg_18bits |mux_reg_sync__parameterized2_4      |    97|
+|10    |  carryincase      |mux_reg_operation__parameterized4_1 |     1|
+|11    |    mux_reg_18bits |mux_reg_sync__parameterized4        |     1|
+|12    |  d0reg            |mux_reg_operation__parameterized1_2 |    37|
+|13    |    mux_reg_18bits |mux_reg_sync__parameterized1        |    37|
+|14    |  m0reg            |mux_reg_operation__parameterized3   |     2|
+|15    |    mux_reg_18bits |mux_reg_sync__parameterized3        |     2|
+|16    |  opmode           |mux_reg_operation                   |   306|
+|17    |    mux_reg_18bits |mux_reg_sync                        |   306|
+|18    |  postadd          |post_adder                          |    62|
+|19    |  poutreg          |mux_reg_operation__parameterized2_3 |    49|
+|20    |    mux_reg_18bits |mux_reg_sync__parameterized2        |    49|
+|21    |  preadding        |pre_adder                           |     6|
++------+-------------------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 903.523 ; gain = 590.062
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 903.523 ; gain = 238.910
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 903.523 ; gain = 590.062
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 207 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 42 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 903.523 ; gain = 602.543
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/Projects/Verilog/Projects/Spartan6_DSP48A1/DSP48A1_IMPLE/DSP48A1_IMPLE.runs/synth_1/maindsp48a1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file maindsp48a1_utilization_synth.rpt -pb maindsp48a1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 903.523 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 10 20:30:00 2025...
